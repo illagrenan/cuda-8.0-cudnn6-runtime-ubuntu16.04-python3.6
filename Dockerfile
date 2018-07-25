@@ -12,4 +12,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3.6
-RUN pip3.6 install --isolated --no-input --compile --exists-action=a --disable-pip-version-check --use-wheel --no-cache-dir --upgrade pip setuptools wheel
+RUN pip3.6 install --isolated --no-input --compile --exists-action=a --disable-pip-version-check --no-cache-dir --upgrade pip setuptools wheel
